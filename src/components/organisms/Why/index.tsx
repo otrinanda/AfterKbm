@@ -23,19 +23,22 @@ const WhyWeDo: FC<WhyWeDoProps> = ({}) => {
               </div>
             </div>
             <div className="py-5 md:pr-24 sm:pr-40">
-              <div className="text-xl xs:text-3xl sm:text-3xl md:text-4xl text-zinc-800 font-light font-tiempos-headline pt-4">
-                We like helping good people
-                <br className="sm:hidden" /> do great things.
-                <div>
-                  Got an extra minute?
-                  <br className="sm:hidden md:hidden" />
-                  <a
-                    href="/about"
-                    className="border-b-2 border-[#706F6B] text-[#706F6B] ml-2"
-                  >
-                    We have more to say
-                  </a>
-                </div>
+              <span className="font-mono text-[12px] md:text-xl mb-2">
+                Tiap sudut Smansawi mengingatkan kita yang selalu sama,
+                <br className="sm:block hidden" /> yang berubah hanya foto
+                Presiden di kelas-kelas.
+              </span>
+              <div className="text-xl xs:text-3xl sm:text-3xl md:text-4xl text-zinc-800 pt-4">
+                Cerita-cerita kita akan bertahan tanpa batas usia.
+                <br />
+                Butuh di maintenance, dengan nostalgia.
+                <br className="sm:hidden md:hidden" />
+                <a
+                  href="/about"
+                  className="border-b-2 border-[#E9B34A] text-[#E9B34A] ml-0 sm:ml-2"
+                >
+                  Yuk Kumpul !
+                </a>
               </div>
             </div>
           </div>

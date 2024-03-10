@@ -2,6 +2,7 @@ import { Baby } from "lucide-react";
 import Image from "next/image";
 import React, { FC } from "react";
 import example3 from "../../../../public/example3.png";
+import example4 from "../../../../public/people.png";
 
 interface PeopleProps {
   // Define props here
@@ -21,12 +22,14 @@ const People: FC<PeopleProps> = ({}) => {
       </div>
       <div className="pt-6 pl-8 md:pl-2- lg:pl-44 w-11/12 md:w-full">
         <div className="text-[20px] text-xl xs:text-3xl sm:text-3xl md:text-4xl">
-          Whether you`re just starting out or far along,
+          Smansawi 51, 
+          <br/>
+          sudah sejauh apapun kamu, 
           <br className="hidden md:block" />
-          this is a place for you
+          tempat ini selalu untukmu.
         </div>
         <div className="pt-2 md:pt-6 text-[11px] sm:text-[14px] sm:text-md font-mono">
-          We know it can be intimidating to start
+          We know it can be struggle to start
           <br />
           (We`ve been there).
         </div>
@@ -34,7 +37,7 @@ const People: FC<PeopleProps> = ({}) => {
       <div className="-mt-[5rem] sm:-mt-[8rem] md:-mt-[9rem] lg:-mt-[20rem">
         <Image
           id="socraticaLogo"
-          src={example3}
+          src={example4}
           alt="Socratica Logo"
           sizes="75vw"
           // Make the image display full width

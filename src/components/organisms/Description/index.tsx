@@ -37,9 +37,7 @@ const Description: FC<DescriptionProps> = ({}) => {
             </div>
             <div className="flex items-center whitespace-nowrap sm:whitespace-normal">
               Karena membekas,
-              <span className=" border-solid border-b-2 md:border-b-4 border-[#CDC19F] mx-1">
-                selamanya
-              </span>
+              <span className=" italic">selamanya</span>
               <span className="bg-[#E9B34A] md:w-8 md:h-8 w-6 h-6 rounded-full md:mx-2 mx-1" />
               bertahan.
             </div>
@@ -48,8 +46,7 @@ const Description: FC<DescriptionProps> = ({}) => {
             <div className="text-center text-[12px] md:text-xl">
               <span className="">
                 After KBM di Aula Putih mari kita Bicara seru, Ngopi, Nostalgi
-                di senin pagi,
-                sembari Ngobrol sana sini dan tentu saja
+                di senin pagi, dan tentu saja
                 <br />
                 <a
                   href="https://lu.ma/socratica"

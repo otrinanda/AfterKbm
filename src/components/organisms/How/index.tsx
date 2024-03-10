@@ -1,8 +1,9 @@
-import { PartyPopper } from "lucide-react";
+import { ArrowUpRight, PartyPopper } from "lucide-react";
 import Image from "next/image";
 import React, { FC } from "react";
 import example4 from "../../../../public/example4.png";
 import example5 from "../../../../public/example5.png";
+import { Button } from "@/components/ui/button";
 
 interface HowItWorksProps {
   // Define props here
@@ -38,17 +39,33 @@ const HowItWorks: FC<HowItWorksProps> = ({}) => {
             </div>
           </div>
           <div className="p-5 pr-6 md:pr-10 lg:pr-40 text-zinc-800">
-            <div className="text-xl sm:text-3xl lg:text-4xl lg:pt-9">
-              Introductions,
+            <div className="text-xl sm:text-3xl lg:text-4xl lg:pt-9 ">
+              Kamu Registrasi,
+              {/* <span className="font-mono text-sm">*ada HTMnya 120 ya kakaa~</span> */}
               <br />
-              two 50-min work blocks ,<br />
-              ,ending with casual open demos <br />
-              snacks along the way.
+              Kamu dateng ke SMA 1 Slawi,
+              <br />
+              <span className="text-[#C34F31] text-4xl lg:text-6xl">
+                Nostalgia,
+              </span>
+              <br />
+              Kita
+              <span className="text-[#758F2A] px-1">tertawa</span>&
+              <span className="text-[#E9B34A] px-1">senyum</span>
             </div>
-            <div className="pt-5 text-[11px] md:text-[14px] text-zinc-800 font-mono">
-              Socratica is a live IRL co-working session hosted every Sunday
-              bringing together people who want to make stuff, and you`re
-              invited
+            <Button className="rounded-3xl px-8 mr-8 mb-4 font-mono bg-[#C34F31] my-4">
+              <ArrowUpRight className="mr-2 h-6 w-6" />
+              Gas Daftar
+            </Button>
+            <div className="pt-5 text-[12px] md:text-[14px] text-zinc-800 font-mono">
+              Penting lur!
+              <br />
+              Dalam rangka Nostalgia, 15 April 2024 ini kamu ditunggu di jam
+              08.30 WIB yah. Busana nostalgia, kita samain yuk, Pakaian identik
+              putih abu-abu (bukan seragam kok), atau atribut: Smansa, ekskul,
+              dan atau Kelas yang masih muat. HTM 120K/orang, untuk menambah
+              satu lagi cerita nostalgia. Nikmatilah waktu, karena kita tak
+              tahu, apa esok masih me-nunggu.Huuuu~
             </div>
           </div>
         </div>
