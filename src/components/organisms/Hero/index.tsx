@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { FC } from "react";
 import profilePic from "../../../../public/example1.png";
+import HeroPic from "../../../../public/Hero.svg";
 import landscapePic from "../../../../public/example2.png";
 import { Button } from "@/components/ui/button";
 import { Poppins } from "next/font/google";
@@ -23,7 +24,7 @@ const Hero: FC<HeroProps> = ({}) => {
             <div className="h-[200px] w-auto object-contain">
               <Image
                 id="socraticaLogo"
-                src={profilePic}
+                src={HeroPic}
                 alt="Socratica Logo"
                 sizes="75vw"
                 // Make the image display full width
@@ -35,25 +36,34 @@ const Hero: FC<HeroProps> = ({}) => {
             </div>
           </div>
           <div className="flex space-x-4 mb-8 md:mb-12">
-            <div className="w-4/6 md:w-1/2">
-              <p className="text-md sm:text-xl lg:text-3xl ">
-                We host weekly co-working sessions for you to work on your
-                passion projects with likeminded people.
+            <div className="">
+              <p className="text-md sm:text-xl lg:text-3xl lg:leading-[3rem] sm:leading-8">
+                di Aula Putih ayo
+                <span className=" border-dashed border-b-2 border-gray-600 ml-1">
+                  Kumpul,{" "}
+                </span>
+                <br />
+                Satu hari bicara satu masa penuh cerita,
+                <br />
+                aku kamu,kita menyatu.
               </p>
               <div className="mt-4 gap-2">
                 <Button className="rounded-3xl px-8 py-4 mr-8 mb-4 font-mono ">
                   <ArrowUpRight className="mr-2 h-6 w-6" />
-                  Attend A Session
+                  Gas Daftar
                 </Button>
-                <Button className="rounded-3xl px-8 py-4 font-mono " variant={"outline"}>
+                <Button
+                  className="rounded-3xl px-8 py-4 font-mono "
+                  variant={"outline"}
+                >
                   <Fingerprint className="mr-2 h-6 w-6 " />
-                  Dive Deeper
+                  Lihat lihat dulu boleh
                 </Button>
               </div>
             </div>
-            <div className="flex-1 flex flex-col items-end justify-end">
+            {/* <div className="flex-1 flex flex-col items-end justify-end">
               cc here
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
