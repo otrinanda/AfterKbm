@@ -2,7 +2,7 @@ import { Baby } from "lucide-react";
 import Image from "next/image";
 import React, { FC } from "react";
 import example3 from "../../../../public/example3.png";
-import example4 from "../../../../public/people.png";
+import example4 from "../../../../public/people.svg";
 
 interface PeopleProps {
   // Define props here
