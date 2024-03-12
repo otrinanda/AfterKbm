@@ -12,9 +12,9 @@ interface DescriptionProps {
 const Description: FC<DescriptionProps> = ({}) => {
   return (
     <div id="what-is-this">
-      <div className="h-[35rem]  w-full dark:bg-black  dark:bg-dot-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
+      <div className="h-[20rem] md:h-[35rem] w-full dark:bg-black  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex justify-center items-center">
         <div className="flex flex-col">
-          <div className="flex justify-center items-center pt-32 pb-10">
+          <div className="flex justify-center items-center  pb-10">
             <div
               className="flex justify-center px-4 py-2 md:px-6 md:py-3 rounded-full border-2 text-[16px]
       border-[#C6482C] text-[#C6482C] font-mono w-fit"
@@ -42,7 +42,7 @@ const Description: FC<DescriptionProps> = ({}) => {
               bertahan.
             </div>
           </div>
-          <div className="flex items-center justify-center font-mono text-zinc-800 pt-5 md:pt-8 pb-40 px-12">
+          <div className="flex items-center justify-center font-mono text-zinc-800  px-12">
             <div className="text-center text-[12px] md:text-xl">
               <span className="">
                 After KBM di Aula Putih mari kita Bicara seru, Ngopi, Nostalgi

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Prata } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const playfairDisplay = Prata({weight:"400", subsets: ["latin"] });
+const playfairDisplay = Playfair_Display({weight:"400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "After KBM di Aula Putih",

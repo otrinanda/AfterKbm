@@ -4,8 +4,7 @@ import Hero from "@/components/organisms/Hero";
 import HowItWorks from "@/components/organisms/How";
 import People from "@/components/organisms/People";
 import WhyWeDo from "@/components/organisms/Why";
-import { BackgroundBeams } from "@/components/ui/backgroundBeams";
-import { Button } from "@/components/ui/button";
+import React from "react";
 
 export default function Home() {
   return (
@@ -13,8 +12,8 @@ export default function Home() {
       <Hero />
       <Description />
       <People />
-      <HowItWorks />
       <WhyWeDo />
+      <HowItWorks />
       <Footer />
     </main>
   );

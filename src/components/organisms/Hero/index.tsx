@@ -1,14 +1,12 @@
+"use client";
 import Image from "next/image";
 import React, { FC } from "react";
-import landscape from "../../../../public/LandscapeSMA.svg";
-import landscape2 from "../../../../public/Group 4.svg";
 import HeroPic from "../../../../public/Hero.svg";
-import landscapePic from "../../../../public/example2.png";
+import lapangan from "../../../../public/Group 7.png";
 import logo from "../../../../public/logo.svg";
 import { Button } from "@/components/ui/button";
-import { Poppins } from "next/font/google";
 import { ArrowUpRight, Fingerprint } from "lucide-react";
-const poppins = Poppins({ weight: "400", subsets: ["latin"] });
+import ScrollLink from "@/components/atoms/ScrollLink";
 
 interface HeroProps {
   // Define props here
@@ -20,7 +18,7 @@ const Hero: FC<HeroProps> = ({}) => {
       <div className="flex flex-col h-[670px] sm:h-[800px] justify-center">
         <div className="absolute top-5 left-1/2 trasform -translate-x-1/2">
           {/* <h1 className="text-2xl">Smansawi51</h1> */}
-          <div className="object-contain w-[300px]">
+          <div className="object-contain w-[200px] sm:w-[300px]">
             <Image
               id="socraticaLogo"
               src={logo}
@@ -67,17 +65,21 @@ const Hero: FC<HeroProps> = ({}) => {
                 aku, kamu, kita menyatu.
               </p>
               <div className="mt-4 gap-2">
-                <Button className="rounded-3xl px-8 py-4 mr-8 mb-4 font-mono bg-[#C34F31]">
-                  <ArrowUpRight className="mr-2 h-6 w-6" />
-                  Gas Daftar
-                </Button>
-                <Button
-                  className="rounded-3xl px-8 py-4 font-mono border-[#C34F31] text-[#C34F31]"
-                  variant={"outline"}
-                >
-                  <Fingerprint className="mr-2 h-6 w-6 " />
-                  Lihat lihat dulu boleh
-                </Button>
+                <ScrollLink className="btn" href="#how-it-works">
+                  <Button className="rounded-3xl px-8 py-4 mr-8 mb-4 font-mono bg-[#C34F31]">
+                    <ArrowUpRight className="mr-2 h-6 w-6" />
+                    Gas Daftar
+                  </Button>
+                </ScrollLink>
+                <ScrollLink className="btn" href="#what-is-this">
+                  <Button
+                    className="rounded-3xl px-8 py-4 font-mono border-[#C34F31] text-[#C34F31]"
+                    variant={"outline"}
+                  >
+                    <Fingerprint className="mr-2 h-6 w-6 " />
+                    Lihat lihat dulu boleh
+                  </Button>
+                </ScrollLink>
               </div>
             </div>
             {/* <div className="flex-1 flex flex-col items-end justify-end">
@@ -86,10 +88,10 @@ const Hero: FC<HeroProps> = ({}) => {
           </div>
         </div>
       </div>
-      <div className="-mt-28">
+      <div className="-mt-28 ">
         <Image
           id="socraticaLogo"
-          src={landscape2}
+          src={lapangan}
           alt="Socratica Logo"
           sizes="100vw"
           // Make the image display full width
