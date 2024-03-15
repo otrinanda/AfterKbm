@@ -52,13 +52,13 @@ const HowItWorks: FC<HowItWorksProps> = ({}) => {
             </div>
           </div>
           <div className="p-5 pr-6 md:pr-10 lg:pr-40 text-zinc-800">
-            <div className="text-xl sm:text-3xl lg:text-4xl lg:pt-9 ">
+            <div className="text-2xl sm:text-3xl lg:text-4xl lg:pt-9 ">
               Registrasi,
               {/* <span className="font-mono text-sm">*ada HTMnya 120 ya kakaa~</span> */}
               <br />
-              Dateng ke SMA 1 Slawi,
+              Kumpul (after) KBM di Smansawi,
               <br />
-              <span className="text-[#C34F31] text-4xl leading-[4rem] lg:text-6xl lg:leading-[6rem]">
+              <span className="text-[#C34F31] text-6xl leading-[4rem] lg:text-6xl lg:leading-[6rem]">
                 Nostalgia...
               </span>
               <br />

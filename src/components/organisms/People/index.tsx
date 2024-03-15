@@ -1,7 +1,6 @@
 import { Baby } from "lucide-react";
 import Image from "next/image";
 import React, { FC } from "react";
-import example3 from "../../../../public/example3.png";
 import example4 from "../../../../public/people.svg";
 
 interface PeopleProps {
@@ -24,8 +23,8 @@ const People: FC<PeopleProps> = ({}) => {
         <div className="text-[20px] text-xl xs:text-3xl sm:text-3xl md:text-4xl">
           Smansawi 51, 
           <br/>
-          sudah sejauh apapun kamu, 
-          <br className="hidden md:block" />
+          sejauh apapun kamu, 
+          <br className="hidden md:block ml-1"  />
           tempat ini selalu untukmu.
         </div>
         <div className="pt-2 md:pt-6 text-[11px] sm:text-[14px] sm:text-md font-mono">
