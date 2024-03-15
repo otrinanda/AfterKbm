@@ -60,7 +60,7 @@ const Hero: FC<HeroProps> = ({}) => {
                   Kumpul,{" "}
                 </span>
                 <br />
-                Satu hari bicara satu masa penuh cerita,
+                Satu hari bicara, satu masa penuh cerita,
                 <br />
                 aku, kamu, kita menyatu.
               </p>

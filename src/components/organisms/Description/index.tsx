@@ -46,15 +46,15 @@ const Description: FC<DescriptionProps> = ({}) => {
             <div className="text-center text-[12px] md:text-xl">
               <span className="">
                 After KBM di Aula Putih mari kita Bicara seru, Ngopi, Nostalgi
-                di senin pagi, dan tentu saja
-                <br />
+                di Senin pagi, dan tentu saja kamu diundang
+                {/* <br />
                 <a
                   href="https://lu.ma/socratica"
                   target="_blank"
                   className="border-b-2 border-dashed border-[#C34F31] text-[#C34F31] px-1 font-semibold"
                 >
                   kamu diundang
-                </a>
+                </a> */}
               </span>
             </div>
           </div>

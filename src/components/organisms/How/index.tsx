@@ -1,7 +1,8 @@
-import { ArrowUpRight, PartyPopper } from "lucide-react";
+import { Flame, PartyPopper } from "lucide-react";
 import Image from "next/image";
 import React, { FC } from "react";
-import goodPeople from "../../../../public/good people.png";
+import people from "../../../../public/people1.png";
+import frame from "../../../../public/Frame 2.png";
 import { Button } from "@/components/ui/button";
 
 interface HowItWorksProps {
@@ -11,10 +12,10 @@ interface HowItWorksProps {
 const HowItWorks: FC<HowItWorksProps> = ({}) => {
   return (
     <section id="how-it-works">
-      <div className="md:hidden inline-block object-contain w-[100%] px-8 pt-8">
+      <div className="md:hidden inline-block object-contain w-[100%]">
         <Image
           id="socraticaLogo"
-          src={goodPeople}
+          src={people}
           alt="Socratica Logo"
           sizes="50vw"
           // Make the image display full width
@@ -24,12 +25,12 @@ const HowItWorks: FC<HowItWorksProps> = ({}) => {
           }}
         ></Image>
       </div>
-      <div className="flex pt-12 md:py-40 md:pb-40">
+      <div className="flex md:py-20">
         <div className="md:pl-16 lg:pl-20 flex flex-col justify-start">
           <div className="hidden md:inline-block object-contain w-[500px]">
             <Image
               id="socraticaLogo"
-              src={goodPeople}
+              src={frame}
               alt="Socratica Logo"
               sizes="50vw"
               // Make the image display full width
@@ -68,35 +69,59 @@ const HowItWorks: FC<HowItWorksProps> = ({}) => {
               Penting lur!
               <br />
               Dalam rangka Nostalgia,
-              <span className="font-semibold mx-1 text-[#C34F31]">15 April 2024</span>
+              <span className="font-semibold mx-1 text-[#C34F31]">
+                15 April 2024
+              </span>
               ini kamu ditunggu di jam 08.30 WIB yah. Busana nostalgia, kita
               samain yuk, Pakaian identik
-              <span className="font-semibold mx-1 text-[#C34F31]">putih abu-abu</span> (bukan
-              seragam SMA kok), atau atribut: Smansa, ekskul, dan atau Kelas
-              yang masih muat
+              <span className="font-semibold mx-1 text-[#C34F31]">
+                putih abu-abu
+              </span>{" "}
+              (bukan seragam SMA kok), atau atribut: Smansa, ekskul, dan atau
+              Kelas yang masih muat
               <span className="font-semibold mx-1 text-[#C34F31]">
                 (boleh kaos, jaket, topi, kemeja)
               </span>
               .
               <br />
-              HTM
-              <span className="font-semibold mx-1 text-[#C34F31]">120K/orang</span>, untuk
-              menambah satu lagi cerita nostalgia. Nikmatilah waktu, karena kita
-              tak tahu, apa esok masih me-nunggu.Huuuu~
+              Ada SPP nya ya
+              <span className="font-semibold mx-1 text-[#C34F31]">
+                {" "}
+                100K /orang
+              </span>
+              , untuk menambah satu lagi cerita nostalgia. Nikmatilah waktu,
+              karena kita tak tahu, apa esok masih me-nunggu.Huuuu~
             </div>
-            <Button className="rounded-3xl px-8 mr-8 mb-4 font-mono bg-[#C34F31] my-4">
-              <ArrowUpRight className="mr-2 h-6 w-6" />
-              Gas Daftar
-            </Button>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc_vtO1Xi34g4dj3-ERXUloZS-BloHaAqlSNJfKdk2gOqsxNw/viewform?usp=sf_link"
+            >
+              <Button className="rounded-3xl px-8 mr-8 mb-4 font-mono bg-[#C34F31] my-4">
+                <Flame className="mr-2 h-6 w-6" />
+                Gas Daftar
+              </Button>
+            </a>
           </div>
         </div>
       </div>
-      {/* <div className="px-10 flex justify-center">
+      <div className="md:hidden flex object-contain w-[100%] pt-8 justify-center">
         <Image
           id="socraticaLogo"
-          src={example5}
+          src={frame}
           alt="Socratica Logo"
-          sizes="75vw"
+          sizes="100vw"
+          // Make the image display full width
+          style={{
+            width: "80%",
+            height: "auto",
+          }}
+        ></Image>
+      </div>
+      {/* <div className="hidden md:flex object-contain w-[100%] justify-center my-10">
+        <Image
+          id="socraticaLogo"
+          src={people}
+          alt="Socratica Logo"
+          sizes="50vw"
           // Make the image display full width
           style={{
             width: "60%",

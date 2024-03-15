@@ -31,10 +31,10 @@ const WhyWeDo: FC<WhyWeDoProps> = ({}) => {
               <div className="text-xl xs:text-3xl sm:text-3xl md:text-4xl text-zinc-800 pt-4">
                 Cerita-cerita kita akan bertahan tanpa batas usia.
                 <br />
-                Butuh di maintenance, dengan nostalgia.
+                Butuh di-<span className="italic">maintenance</span>, dengan nostalgia.
                 <br className="sm:hidden md:hidden" />
                 <a
-                  href="/about"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSc_vtO1Xi34g4dj3-ERXUloZS-BloHaAqlSNJfKdk2gOqsxNw/viewform?usp=sf_link"
                   className="border-b-2 border-[#E9B34A] text-[#E9B34A] ml-0 sm:ml-2"
                 >
                   Yuk Kumpul !
